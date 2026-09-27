@@ -34,19 +34,6 @@ Each model folder contains the fine-tuned LoRA adapter weights and tokenizer con
 
 Full methodology and results are documented in the accompanying manuscript (in preparation).
 
-## Usage
-
-```python
-from peft import PeftModel
-from transformers import AutoModelForSequenceClassification, AutoTokenizer
-
-base_model = AutoModelForSequenceClassification.from_pretrained(
-    "unsloth/Llama-3.2-3B-Instruct", num_labels=2
-)
-model = PeftModel.from_pretrained(base_model, "path/to/adapter/folder")
-tokenizer = AutoTokenizer.from_pretrained("path/to/adapter/folder")
-```
-
 ## Status
 
 This work is part of an ongoing research collaboration and is currently under manuscript review. Models are provided for research purposes only.
