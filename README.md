@@ -22,25 +22,6 @@ Each architecture was fine-tuned separately for each task, using an identical tr
 | OpenChat 3.5 | `openchat/openchat-3.5-0106` |
 
 This repository contains only the fine-tuned LoRA adapter weights, not the base model weights. Base models must be downloaded separately from their respective Hugging Face repositories listed above.
-
-## Repository Structure
-
-SDM MODELS Final Version/
-├── Specificity/
-│ ├── Llama/
-│ ├── Gemma/
-│ ├── Qwen/
-│ ├── Mistral/
-│ └── OpenChat/
-└── Integration/
-├── Llama/
-├── Gemma/
-├── Qwen/
-├── Mistral/
-└── OpenChat/
-
-
-
 Each model folder contains the fine-tuned LoRA adapter weights and tokenizer configuration for that architecture and task.
 
 ## Methodology
@@ -69,7 +50,3 @@ tokenizer = AutoTokenizer.from_pretrained("path/to/adapter/folder")
 ## Status
 
 This work is part of an ongoing research collaboration and is currently under manuscript review. Models are provided for research purposes only.
-
-## Contact
-
-Rishi Gnanasekar — [GitHub](https://github.com/Rishisekar1610)
